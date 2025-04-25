@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclass</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+        }
+
+        div {
+            display: inline-block;
+            border: 1px solid black;
+            margin: 10px;
+            position: relative;
+        }
+
+        .d1 {
+            background-color: red;
+        }
+
+        .d2 {
+            background-color: rgb(63, 145, 216);
+        }
+
+        .d3 {
+            background-color: yellow;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .description {
+        display: none; /* Inicialmente, a descrição está oculta */
+        position: absolute; /* Isso faz com que a descrição fique sobre a imagem */
+        top: 100%; /* Coloca a descrição logo abaixo da imagem */
+        left: 0;
+        width: 100%; /* A largura da descrição é a mesma da div */
+        background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro e transparente */
+        color: white; /* Cor do texto */
+        padding: 10px; /* Um pouco de padding para o texto não grudar nas bordas */
+        border-radius: 5px; /* Bordas arredondadas para suavizar a aparência */
+        text-align: center; /* Alinha o texto ao centro */
+        box-sizing: border-box; /* Certifica-se de que o padding não afete a largura */
+        }
+
+        div:hover .description {
+            display: block;
+        }
+
+       img {
+        display: block;
+        margin: 0 auto;
+       }
+       
+
+    </style>
+</head>
+<body>
+    <h1>Top 3 jogadores seculo XXI</h1>
+    <div class="d1">
+        <p class="p1">Cristiano Ronaldo</p>
+        <img src="Imagens/Cristiano Ronaldo Portugal 🇵🇹.jpg" alt="jpeg" height="130px" width="130px">
+        <p class="description">Cristiano Ronaldo é um dos maiores jogadores de futebol de todos os tempos. Nascido em Portugal, ele se destacou no Sporting CP e logo se transferiu para o Manchester United, onde começou a brilhar. Passando pelo Real Madrid e Juventus, conquistou diversos títulos, incluindo várias Ligas dos Campeões. Reconhecido por sua habilidade, força física e trabalho árduo, também é o maior artilheiro de seleções. Sua carreira é marcada por prêmios, recordes e uma incrível longevidade no esporte.</p>
+    </div>
+    <div class="d2">
+        <p class="p2">Messi</p>
+        <img src="Imagens/e7c4cace-9d73-4453-923b-946820f71fa7.jpg" alt="jpeg" height="130px" width="130px">
+        <p class="description">Lionel Messi, nascido na Argentina, é amplamente considerado um dos maiores jogadores de futebol da história. Começou sua carreira no Barcelona, onde se tornou ícone, conquistando títulos como La Liga e a Liga dos Campeões. Com habilidade única, dribles impressionantes e visão de jogo, Messi levou a Argentina à vitória na Copa América de 2021. Com vários prêmios Ballon d'Or, é um símbolo global do esporte, marcando uma era de excelência e superação no futebol.</p>
+    </div>
+    <div class="d3">
+        <p class="p3">Neymar</p>
+        <img src="Imagens/neymar.jpg" alt="jpeg" height="130px" width="130px">
+        <p class="description">Neymar Jr., nascido no Brasil, é um dos maiores talentos da geração atual. Conhecido por sua habilidade técnica, dribles e velocidade, ele se destacou no Santos antes de brilhar no Barcelona e, posteriormente, no Paris Saint-Germain. Neymar conquistou inúmeros títulos, incluindo a Liga dos Campeões e a Copa Libertadores. Sua habilidade criativa e estilo de jogo ousado conquistaram fãs ao redor do mundo. Com a Seleção Brasileira, conquistou a Copa das Confederações e a Olimpíada de 2016.</p>
+    </div>
+</body>
+</html>

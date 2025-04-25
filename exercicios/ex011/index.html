@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+    <h1>Imagens flexiveis</h1>
+    <p>Aqui temos tres tipos de imagens, 300px para celular, 700px para tablet, 1000px para computador, notebook ou TV.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/logo-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/logo-m.png" type="image/png">
+        <img src="imagens/logo-g.png" alt="Imagem flexivel"> 
+    </picture> <!--Começar sempre da maior imagem para a menor em ordem decrescente, trocar o min po max-->
+    
+    <h1>Audios</h1>
+    <h2>Aqui vamos aprender a usar o arquivo de áudio</h2>
+    <p>Audio de história de terror abaixo.</p>
+    <audio preload="metadata" controls>
+        <source src="audio/ElevenLabs_2024-11-17T13_36_07_Brian_pre_s50_sb75_se0_b_m2.mp3" type="audio/mpeg">
+    </audio> <!--tres formatos de audio (MP3, oOGG e WAF)-->
+</body>
+</html>

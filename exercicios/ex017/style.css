@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body {
+    font: normal 1em arial, sans-serif;
+    background: linear-gradient(to right, rgb(53, 225, 53), rgb(128, 233, 120), rgb(125, 184, 127));
+
+    /*
+    acima eu fiz um degarde no background do body, usando a tag "backgoround" e a subtag "linear-gradiente, depois indiquei a direção usando o "to" que significa "para" e "right" que significa "direita, apos isso coloquei as cores.
+    */
+
+}
+
+main {
+    background-color: white;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+    /*
+    usei o text-align: "center" para centralizar o texto, e o text-align: justify para o texto ficar alinhado na esquerda e na direita, o text-indent de 20px para dar o espaçono começo do paragrafo.
+    */

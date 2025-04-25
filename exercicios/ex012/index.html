@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<body>
+    <h1>Inserindo videos localmente</h1>
+    <p>Aqui abaixo temos um video hospedado no meu proprio servidor</p>
+    <video width="300" height="300" controls poster="imagens/Leonardo_Phoenix_Create_an_animestyle_image_of_a_serene_daytim_0.jpg" loop>
+        <source src="midia/meuvideo.webm.webm" type="video/webm">
+        <source src="midia/meuvideo.mp4.mp4" type="video/mp4"> 
+        <p>Infelizmente o seu navegador nao é compativel com o video</p> <!--Sempre colocar os videos do menor para o maior, para que o site carregue o formato de video mais leve de acordo com o que o navegador suporte.-->
+    </video>
+    <h1>Inserindo videos do youtube</h1>
+    <p>Aqui vamos inserir um video externo, la no youtube<p>
+        <iframe width="300" height="300" src="https://www.youtube.com/embed/5yeikoj4Yko?si=SJp2kFVkdpJ-O2g4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!--Desse modo é muito melhor pois nao consome dados do seu site, e sim do youtube, por isso vale muito mais apena utilizar essa forma!-->
+</body>
+</html>

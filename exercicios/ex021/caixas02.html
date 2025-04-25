@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: #06AA48;
+            padding: 5px;
+            text-align: center;
+        }
+
+        h1{
+            font-style: normal;
+            font-weight: normal;
+            color: white;
+            font-size: 3em;
+        }
+
+        h2 {
+            color: #05903D;
+            margin-bottom: 15px;
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1.3em;
+            color: #555555;
+            padding-bottom: 20px;
+        }
+
+        .dev {
+            color: rgb(225, 224, 224);
+            padding: 0;
+            font-size: 20px;
+        }
+
+        .horalocal {
+            font-size: 14px;
+            padding-top: 10px;
+        }
+
+        .conteudo {
+            display: flex;
+            gap: 20px;
+            align-items:flex-start;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px 10px 10px ;
+        }
+
+        .noticia {
+            flex: 1;
+        }
+
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 0 15px;
+        }
+
+        article{
+            padding-top: 30px;
+            margin: 30px 20px ;
+            border-bottom: 2px solid #ccc;
+            box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.263);
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        img:hover {
+            width: 350px;
+            box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.222); 
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Futebol</h1>
+    </header>
+    <main>
+        <section>
+            <article class="a1">
+                <div class="conteudo">
+                    <img src="assets/not1.avif" alt="Davi Araujo">
+                    <div class="noticia">
+                        <h2>Lembra dele? Ex-Botafogo e Athletico, atacante Davi Araújo vai jogar Série D pelo Uberlândia</h2>
+                        <p>Atacante de 26 anos atuou no Alvinegro entre 2020 e 2021 e é reforço do Verdão para a quarta divisão nacional</p>
+                        <p class="horalocal">Há 1 minuto - Em uberlandia</p>
+                    </div>
+                </div>
+            </article>
+            <article class="a2">
+                <div class="conteudo">
+                    <img src="assets/not2.avif" alt="Abel ferreira">
+                    <div class="noticia">
+                        <h2>Abel revela meta para o Palmeiras no Mundial e cita rivalidade antes de encontro com o Porto</h2>
+                        <p>Formado no Sporting de Lisboa, técnico alviverde vai enfrentar equipe de seu país na estreia da Copa do Mundo de Clubes, em junho, nos Estados Unidos</p>
+                        <p class="horalocal">Há 4 minutos - Em palmeiras</p>
+                    </div>
+                </div>
+            </article>
+            <article class="a3">
+                <div class="conteudo">
+                    <img src="assets/not3.avif" alt="CEO">
+                    <div class="noticia">
+                        <h2>CEO de patrocinadora festeja renovação e diz como ajudou São Paulo a contratar Oscar</h2>
+                        <p>Alexandre Fonseca fala sobre contrato longo da Superbet com o Tricolor</p>
+                        <p class="horalocal">Há 9 minutos - Em são paulo</p>
+                    </div>
+                </div>
+            </article>
+
+            
+        </section>
+    </main>
+    <footer>
+        <p class="dev">© Desenvolvido por MaylonDev</p>
+    </footer>
+</body>
+</html>

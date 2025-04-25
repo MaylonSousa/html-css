@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* Início do bloco de estilos CSS */
+        body {
+            font-family: Arial, Helvetica, sans-serif; /* Define a fonte utilizada no corpo da página */
+        }
+    
+        a {
+            color: rgb(74, 47, 47); /* Define a cor do texto dos links */
+            text-decoration: none; /* Remove o sublinhado padrão dos links */
+        }
+    
+        /* A classe 'lista' aplica estilos quando o item de lista é interagido */
+        .lista:hover {
+            text-decoration: underline; /* Quando o mouse passa por cima (hover), o link fica sublinhado */
+        }
+    
+        /* Pseudo-elemento ::before adiciona conteúdo antes do item de lista */
+        .lista::before {
+            content: "=>   "; /* Adiciona "=>" antes de cada item da lista */
+        }
+        
+        /* Pseudo-elemento ::after adiciona conteúdo depois do item de lista */
+        .lista::after {
+            content: "   <="; /* Adiciona "<=" após cada item da lista */
+        }
+    
+        /* Pseudo-classe :active altera o estilo do link quando clicado */
+        .lista:active {
+            color: white; /* Muda a cor do texto para branco */
+            font-size: 3em; /* Aumenta o tamanho da fonte */
+            background-color: brown; /* Altera o fundo para marrom quando o link é clicado */
+        }
+    
+        </style>
+</head>
+<body>
+    <h1>Aprendendo alguns pseudo-elemment</h1>
+    <ul>
+        <li class="lista"><a href="https://www.bet365.bet.br" target="_blank">Site da bet365</a></li>
+        <li class="lista"><a href="https://www.betano.bet.br/" target="_blank">Site da betano</a></li>
+        <li class="lista"><a href="https://www.bhbet11.com" target="_blank">Site da BHbet</a></li>
+    </ul>
+</body>
+</html>
